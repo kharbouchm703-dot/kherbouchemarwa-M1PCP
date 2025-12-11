@@ -51,3 +51,16 @@ print(df)
 # 6) Ajouter colonne du nombre de 'G'
 df["Nb_G"] = df["Séquence"].apply(lambda seq: seq.count("G"))
 print(df)
+
+
+# 7) Écart-type de % GC et
+Longueur
+ecart_gc =
+df["Pourcentage_GC"].stp()
+ecart_longueur=
+df["Longueur"].stp()
+print("\nÉcart-type%GC:",ecart_gc)
+print("Écart-typeLongueur:",
+      ecart_longueur)
+
+
