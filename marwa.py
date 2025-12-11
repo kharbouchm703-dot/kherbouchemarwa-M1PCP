@@ -29,3 +29,14 @@ print(df)
 # 2) Afficher uniquement la colonne "Longueur"
 print("\nColonne Longueur :")
 print(df["Longueur"])
+
+
+ # 3) Filtrer les séquences longueur > 10
+print("\nSéquences avec longueur > 10 :")
+df_filtered = df[df["Longueur"] > 10] 
+print(df_filtered)
+
+ # 4) Pourcentage moyen de GC (3 chiffres après virgule) 
+moyenne_gc = df["Pourcentage_GC"].mean()
+print("\nPourcentage moyen de GC :", round(moyenne_gc, 3))  
+
